@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 
 const PROTECTED = ["/dashboard", "/transactions", "/categories", "/budget", "/reports", "/profile"];
 
-export function middleware(request: NextRequest) {
+export function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl;
   const token = request.cookies.get("better-auth.session_token")?.value;
 
