@@ -220,7 +220,7 @@ export default function DashboardPage() {
             <span className="material-symbols-outlined text-2xl text-quaternary shrink-0">savings</span>
             <div>
               <p className="font-black text-white text-sm">Magaling! You&apos;re saving <span className="text-quaternary">₱{Math.abs(totalSavings).toLocaleString(undefined, { maximumFractionDigits: 0 })}</span> so far.</p>
-              <p className="text-xs text-slate-500 mt-0.5">Keep it up — every peso saved counts!</p>
+              <p className="text-xs text-slate-500 mt-0.5">Keep it up; every peso saved counts!</p>
             </div>
           </div>
         );

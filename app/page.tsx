@@ -173,7 +173,7 @@ function HeroSection() {
           <div className="flex w-full flex-col gap-3 sm:flex-row sm:w-auto">
             <Link href="/login">
               <button className="flex h-13 items-center justify-center gap-2 rounded-full bg-primary px-8 text-base font-black text-stone-900 shadow-xl shadow-primary/25 transition-all hover:bg-primary-hover hover:shadow-primary/40 hover:scale-[1.02] active:scale-[0.98] w-full sm:w-auto">
-                Simulan na — Libre!
+                Simulan na, Libre!
                 <span className="material-symbols-outlined text-lg">arrow_forward</span>
               </button>
             </Link>
@@ -198,7 +198,7 @@ function HeroSection() {
 
 function StatsStrip() {
   const stats = [
-    { value: "100%", label: "Libre — forever", icon: "verified" },
+    { value: "100%", label: "Libre, forever", icon: "verified" },
     { value: "₱ PHP", label: "Philippine Peso first", icon: "currency_exchange" },
     { value: "Secure", label: "Bcrypt-hashed passwords", icon: "lock" },
     { value: "CSV + PDF", label: "Export anytime", icon: "download" },
@@ -274,7 +274,7 @@ function ProblemSection() {
 
 function FeaturesSection() {
   const features = [
-    { icon: "receipt_long", title: "Track Every Gastos", desc: "Add what you spent or earned in seconds. Pick a category, write a note, set the date — that's it.", color: "from-primary/20 to-orange-500/10", iconColor: "text-primary" },
+    { icon: "receipt_long", title: "Track Every Gastos", desc: "Add what you spent or earned in seconds. Pick a category, write a note, set the date; that's it.", color: "from-primary/20 to-orange-500/10", iconColor: "text-primary" },
     { icon: "savings", title: "Tipid Mode Budgets", desc: "Set a spending limit per category. IponPinoy shows you a progress bar so you know before you go overboard.", color: "from-quaternary/20 to-emerald-500/10", iconColor: "text-quaternary" },
     { icon: "bar_chart", title: "See the Bigger Picture", desc: "Find out where your money actually goes each month. Spot your biggest expenses at a glance.", color: "from-tertiary/20 to-sky-500/10", iconColor: "text-tertiary" },
     { icon: "category", title: "Ready-Made Categories", desc: "Start with 12 Pinoy-friendly categories like Pagkain, Transpo, and Kuryente. Add your own whenever.", color: "from-violet-500/20 to-purple-500/10", iconColor: "text-violet-400" },
@@ -291,7 +291,7 @@ function FeaturesSection() {
             Lahat ng kailangan mo para<br />
             <span className="bg-gradient-to-r from-primary to-orange-400 bg-clip-text text-transparent">mag-ipon nang matalino.</span>
           </h2>
-          <p className="max-w-lg text-lg text-slate-400">Built specifically for Filipino finances — no overcomplicated spreadsheets, no foreign currency confusion.</p>
+          <p className="max-w-lg text-lg text-slate-400">Built specifically for Filipino finances; no overcomplicated spreadsheets, no foreign currency confusion.</p>
         </div>
         <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
           {features.map((f) => (
@@ -316,7 +316,7 @@ function FeaturesSection() {
 
 function HowItWorksSection() {
   const steps = [
-    { n: "01", icon: "person_add", title: "Mag-sign up — libre!", desc: "Create your account in under 30 seconds. No credit card, no verification email needed." },
+    { n: "01", icon: "person_add", title: "Mag-sign up, libre!", desc: "Create your account in under 30 seconds. No credit card, no verification email needed." },
     { n: "02", icon: "add_circle", title: "I-log ang iyong kita at gastos", desc: "Add transactions with amount, category, and date. Your 12 default categories are ready on signup." },
     { n: "03", icon: "insights", title: "Panoorin ang iyong ipon lumaki", desc: "Check your dashboard daily. Set budgets, read reports, and export whenever you need." },
   ];
@@ -434,7 +434,7 @@ function FAQSection() {
     },
     {
       q: "Ligtas ba ang aking data?",
-      a: "Oo. Ang iyong password ay hindi stored as plain text — ginagamit namin ang bcrypt hashing. Ikaw lang ang may access sa iyong financial data.",
+      a: "Oo. Ang iyong password ay hindi stored as plain text; ginagamit namin ang bcrypt hashing. Ikaw lang ang may access sa iyong financial data.",
     },
     {
       q: "Puwede bang mag-export ng data?",
@@ -446,7 +446,7 @@ function FAQSection() {
     },
     {
       q: "Puwede bang gamitin sa mobile?",
-      a: "Oo, fully responsive ang IponPinoy. Gumana sa kahit anong browser — Android, iPhone, o desktop.",
+      a: "Oo, fully responsive ang IponPinoy. Gumana sa kahit anong browser: Android, iPhone, o desktop.",
     },
     {
       q: "May app ba sa App Store o Play Store?",
@@ -503,7 +503,7 @@ function CTASection() {
             </div>
             <Link href="/login">
               <button className="flex items-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-black text-stone-900 shadow-xl shadow-primary/30 transition-all hover:bg-primary-hover hover:scale-[1.02] active:scale-[0.98] whitespace-nowrap sm:px-10 sm:py-4 sm:text-lg">
-                Magsimula Na — Libre!
+                Magsimula Na, Libre!
                 <span className="material-symbols-outlined text-lg sm:text-xl">arrow_forward</span>
               </button>
             </Link>

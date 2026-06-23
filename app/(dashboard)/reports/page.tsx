@@ -71,7 +71,7 @@ export default function ReportsPage() {
     const { jsPDF } = await import("jspdf");
     const autoTable = (await import("jspdf-autotable")).default;
     const doc = new jsPDF();
-    doc.setFontSize(16); doc.text(`Finance Report — ${selectedMonth}`, 14, 20);
+    doc.setFontSize(16); doc.text(`Finance Report: ${selectedMonth}`, 14, 20);
     doc.setFontSize(10);
     doc.text(`Income: ₱${totalIncome.toFixed(2)}   Expenses: ₱${totalExpense.toFixed(2)}   Net: ₱${netSavings.toFixed(2)}`, 14, 30);
     autoTable(doc, {
@@ -176,7 +176,7 @@ export default function ReportsPage() {
 
         {/* Top Expenses */}
         <div className="rounded-2xl border border-white/8 bg-[#292524] banig-xs p-6">
-          <p className="font-bold text-white mb-5">Top Expenses — {monthLabel(selectedMonth)}</p>
+          <p className="font-bold text-white mb-5">Top Expenses: {monthLabel(selectedMonth)}</p>
           {isLoading ? (
             <div className="flex flex-col gap-4">
               {[...Array(5)].map((_, i) => <div key={i} className="h-8 rounded-lg bg-white/5 animate-pulse" />)}
@@ -210,7 +210,7 @@ export default function ReportsPage() {
       {/* Transaction table */}
       <div className="rounded-2xl border border-white/8 bg-[#292524] banig-xs overflow-hidden">
         <div className="flex items-center justify-between border-b border-white/5 px-5 py-4">
-          <p className="font-bold text-white">All Transactions — {monthLabel(selectedMonth)}</p>
+          <p className="font-bold text-white">All Transactions: {monthLabel(selectedMonth)}</p>
           <span className="text-xs text-slate-500">{monthTx.length} transaction{monthTx.length !== 1 ? "s" : ""}</span>
         </div>
         {isLoading ? (

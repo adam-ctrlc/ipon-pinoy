@@ -108,21 +108,21 @@ h1, h2, h3, h4, h5, h6, .font-display {
 .animate-float      { animation: float      3s ease-in-out infinite; }
 .animate-float-slow { animation: float-slow 4.5s ease-in-out infinite; }
 
-/* Banig (woven mat) diagonal crosshatch — very subtle page background texture */
+/* Banig (woven mat) diagonal crosshatch, very subtle page background texture */
 .banig-xs {
   background-image:
     repeating-linear-gradient(45deg,  rgba(251,191,36,0.028) 0px, rgba(251,191,36,0.028) 1px, transparent 1px, transparent 14px),
     repeating-linear-gradient(-45deg, rgba(251,191,36,0.028) 0px, rgba(251,191,36,0.028) 1px, transparent 1px, transparent 14px);
 }
 
-/* Medium weight — section backgrounds */
+/* Medium weight, section backgrounds */
 .banig-sm {
   background-image:
     repeating-linear-gradient(45deg,  rgba(251,191,36,0.05) 0px, rgba(251,191,36,0.05) 1.5px, transparent 1.5px, transparent 12px),
     repeating-linear-gradient(-45deg, rgba(251,191,36,0.05) 0px, rgba(251,191,36,0.05) 1.5px, transparent 1.5px, transparent 12px);
 }
 
-/* Woven stripe — alternating thick/thin bands like real banig */
+/* Woven stripe, alternating thick/thin bands like real banig */
 .banig-weave {
   background-image:
     repeating-linear-gradient(

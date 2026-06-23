@@ -194,8 +194,8 @@ export default function ProfilePage() {
           {!isEditing ? (
             <div className="divide-y divide-white/5">
               {[
-                { label: "First Name", value: user.firstName || "—" },
-                { label: "Last Name",  value: user.lastName  || "—" },
+                { label: "First Name", value: user.firstName || "-" },
+                { label: "Last Name",  value: user.lastName  || "-" },
                 { label: "Email",      value: user.email },
                 { label: "Username",   value: `@${user.username}` },
               ].map((row) => (

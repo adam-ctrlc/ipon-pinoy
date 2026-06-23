@@ -263,7 +263,7 @@ export default function LoginPage() {
                       disabled={registerLoading}
                       className="mt-1 flex h-12 items-center justify-center rounded-xl bg-primary font-black text-stone-900 shadow-lg shadow-primary/20 transition-all hover:bg-primary-hover disabled:opacity-60"
                     >
-                      {registerLoading ? "Creating account..." : "Create Account — Libre!"}
+                      {registerLoading ? "Creating account..." : "Create Account, Libre!"}
                     </button>
                     <p className="text-center text-xs text-slate-600">By signing up, you agree to our Terms of Service.</p>
                   </form>

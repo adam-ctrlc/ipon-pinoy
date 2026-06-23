@@ -25,12 +25,12 @@
 
 ## Features
 
-- **Dashboard** — net savings, income, expenses, cash flow chart, top spending categories, recent transactions, budget goals
-- **Transactions** — log income and expenses, search, filter, CSV export, keyboard shortcut (`N` to add)
-- **Budget (Tipid Mode)** — set spending limits per category or overall, see how much is left with days remaining
-- **Reports** — monthly summary, 6-month trend chart, top expenses breakdown, PDF and CSV export
-- **Categories** — custom categories with icons and colors for expenses and income
-- **Profile** — edit personal info and password with inline edit mode
+- **Dashboard**: net savings, income, expenses, cash flow chart, top spending categories, recent transactions, budget goals
+- **Transactions**: log income and expenses, search, filter, CSV export, keyboard shortcut (`N` to add)
+- **Budget (Tipid Mode)**: set spending limits per category or overall, see how much is left with days remaining
+- **Reports**: monthly summary, 6-month trend chart, top expenses breakdown, PDF and CSV export
+- **Categories**: custom categories with icons and colors for expenses and income
+- **Profile**: edit personal info and password with inline edit mode
 
 ---
 
