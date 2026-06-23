@@ -1,0 +1,142 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #fbbf24;
+  --color-primary-hover: #d97706;
+  --color-secondary: #f43f5e;
+  --color-tertiary: #0ea5e9;
+  --color-quaternary: #10b981;
+
+  --color-accent: #ce1126;
+  --color-highlight: #0038a8;
+
+  --color-background-light: #fff7ed;
+  --color-background-dark: #1c1917;
+
+  --color-surface-light: #ffffff;
+  --color-surface-dark: #292524;
+
+  --color-border-light: #e7e5e4;
+  --color-border-dark: #44403c;
+
+  --color-text-muted: #a8a29e;
+  --color-text-primary: #451a03;
+  --color-text-secondary: #78716c;
+
+  --font-display: "Manrope", sans-serif;
+  --font-body: "Manrope", sans-serif;
+
+  --radius-xl: 0.75rem;
+  --radius-2xl: 1.5rem;
+}
+
+body {
+  font-family: var(--font-body);
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-background-dark);
+  color: white;
+}
+
+h1, h2, h3, h4, h5, h6, .font-display {
+  font-family: var(--font-display);
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-track { background: var(--color-background-dark); }
+::-webkit-scrollbar-thumb { background: var(--color-border-dark); border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: #57534e; }
+
+.text-gradient-ph {
+  background: linear-gradient(to right, #fcd116, #ce1126);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bg-banig {
+  background-color: #fafafa;
+  background-image:
+    repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(0,56,168,0.015) 10px, rgba(0,56,168,0.015) 20px),
+    repeating-linear-gradient(-45deg, transparent, transparent 10px, rgba(206,17,38,0.015) 10px, rgba(206,17,38,0.015) 20px);
+}
+
+.dark .bg-banig {
+  background-color: #0f172a;
+  background-image:
+    repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(255,255,255,0.01) 10px, rgba(255,255,255,0.01) 20px),
+    repeating-linear-gradient(-45deg, transparent, transparent 10px, rgba(255,255,255,0.01) 10px, rgba(255,255,255,0.01) 20px);
+}
+
+.banig-pattern {
+  background-color: var(--color-surface-dark);
+  background-image:
+    linear-gradient(45deg, rgba(251,191,36,0.03) 25%, transparent 25%, transparent 75%, rgba(251,191,36,0.03) 75%, rgba(251,191,36,0.03)),
+    linear-gradient(45deg, rgba(251,191,36,0.03) 25%, transparent 25%, transparent 75%, rgba(251,191,36,0.03) 75%, rgba(251,191,36,0.03));
+  background-position: 0 0, 10px 10px;
+  background-size: 20px 20px;
+}
+
+.textile-texture {
+  background-image: repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(255,255,255,0.02) 2px, rgba(255,255,255,0.02) 4px);
+}
+
+.fiesta-gradient-text {
+  background: linear-gradient(to right, #fbbf24, #f43f5e, #0ea5e9);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bg-weave-pattern {
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* Floating card animations for landing page hero */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-10px); }
+}
+@keyframes float-slow {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-6px); }
+}
+.animate-float      { animation: float      3s ease-in-out infinite; }
+.animate-float-slow { animation: float-slow 4.5s ease-in-out infinite; }
+
+/* Banig (woven mat) diagonal crosshatch — very subtle page background texture */
+.banig-xs {
+  background-image:
+    repeating-linear-gradient(45deg,  rgba(251,191,36,0.028) 0px, rgba(251,191,36,0.028) 1px, transparent 1px, transparent 14px),
+    repeating-linear-gradient(-45deg, rgba(251,191,36,0.028) 0px, rgba(251,191,36,0.028) 1px, transparent 1px, transparent 14px);
+}
+
+/* Medium weight — section backgrounds */
+.banig-sm {
+  background-image:
+    repeating-linear-gradient(45deg,  rgba(251,191,36,0.05) 0px, rgba(251,191,36,0.05) 1.5px, transparent 1.5px, transparent 12px),
+    repeating-linear-gradient(-45deg, rgba(251,191,36,0.05) 0px, rgba(251,191,36,0.05) 1.5px, transparent 1.5px, transparent 12px);
+}
+
+/* Woven stripe — alternating thick/thin bands like real banig */
+.banig-weave {
+  background-image:
+    repeating-linear-gradient(
+      45deg,
+      rgba(251,191,36,0.055) 0px, rgba(251,191,36,0.055) 2px,
+      transparent 2px, transparent 8px,
+      rgba(251,191,36,0.025) 8px, rgba(251,191,36,0.025) 9px,
+      transparent 9px, transparent 17px
+    ),
+    repeating-linear-gradient(
+      -45deg,
+      rgba(251,191,36,0.055) 0px, rgba(251,191,36,0.055) 2px,
+      transparent 2px, transparent 8px,
+      rgba(251,191,36,0.025) 8px, rgba(251,191,36,0.025) 9px,
+      transparent 9px, transparent 17px
+    );
+}
